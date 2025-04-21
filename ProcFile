@@ -1,1 +1,1 @@
-web: gunicorn tmdb_proxy:app
+web: gunicorn app:app
