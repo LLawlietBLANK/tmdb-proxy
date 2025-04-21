@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: tmdb-proxy
+    name: app
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn tmdb_proxy:app
+    startCommand: gunicorn app:app
     envVars:
       - key: TMDB_API_KEY
         value: 2b77016502908b1d4f0ed6f99e109849
